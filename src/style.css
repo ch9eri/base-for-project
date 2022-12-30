@@ -1,0 +1,56 @@
+
+.bar-container ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+}
+.bar-container ul li {
+  background-color: gray;
+  height: 20px;
+  border-radius: 10px;
+}
+.bar {
+  position: absolute;
+  border-radius: 10px;
+  background-color: blue;
+  height: 20px;
+}
+.bar:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "🥹";
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.css-progressbar {
+  width: 80%;
+  /* -moz-animation: css-progressbar 2s ease-out; */
+  -webkit-animation: css-progressbar 2s ease-out;
+  animation: css-progressbar 2s ease-out;
+}
+
+
+@keyframes css-progressbar { 
+  0%  { 
+    width: 0px;
+  } 
+  100% { 
+    width: 80%;
+  }  
+}
+
+/* @-moz-keyframes css-progressbar {
+  0% { 
+    width: 0px;
+  } 
+  100% { 
+    width: 80%;
+  }  
+} */
