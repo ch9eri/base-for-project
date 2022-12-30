@@ -1,6 +1,6 @@
 import { REST_API_KEY,REDIRECT_URI } from "../data/LoginData";
 
-const Login = () => {
+const Home = () => {
     const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
     const handleLogin = () => {
@@ -8,12 +8,14 @@ const Login = () => {
     }
 
     return(
+        <>
         <button onClick={handleLogin}>
             <a href={KAKAO_AUTH_URL}>Kakao Login</a>
         </button>
-
+        <input type={'file'} />
+        </>
     )
 
 }
 
-export default Login;
+export default Home;
