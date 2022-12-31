@@ -12,7 +12,6 @@ const Home = () => {
         <button onClick={handleLogin}>
             <a href={KAKAO_AUTH_URL}>Kakao Login</a>
         </button>
-        <input type={'file'} />
         </>
     )
 
